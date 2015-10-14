@@ -13,7 +13,7 @@
       <ul>
         <li ng-repeat="donut in donuts.all track by $index">
           <strong>{{$index +1}}, {{donut.style}}, {{donut.flavor}}</strong>
-          <input ng-submit="Delete" type="button" value="Delete donut">
+          <input ng-submit="Delete" ng-click="donuts.deleteDoughnut(donut)" type="button" value="Delete donut">
           <input ng-submit="Edit" type="button" value="Edit donut">
         </li>
       </ul>
