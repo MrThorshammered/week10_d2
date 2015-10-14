@@ -46,6 +46,7 @@ function DonutsController($http){
       .get('http://api.doughnuts.ga/doughnuts'+ id)
       .then(function(response){
         console.log(response)
+        editDonut();
       })
   }
 
